@@ -1,0 +1,117 @@
+    body {
+            background-image: url(https://io.sb.by/storage01/iblock/f52/f527467752d3a15ec38f4c72ba132fa6/6c3a21d9d6bf661e50c48ff5a72d70f4.jpg);
+             background-repeat: no-repeat;
+            /* растягивает картинку на весь экран */
+            background-size: cover;
+             text-align: center;
+           color: rgba(1, 0, 4, 0.823);
+           font-size: 20px;
+           line-height: 1.2;
+         font-family: "Josefin Sans", sans-serif;
+        
+        }
+
+        a:hover {
+            /* изменение маштаба */
+            /* transform: scale(1.1); */
+            /* поврот по часовой стрелке */
+            /* transform: rotate(45deg); */
+            /* transform: translateY(-50px);поднятие вверх */
+
+
+
+            /* эффект свечения */
+           
+            transform: translateY(-2px);
+           
+        }
+        img{
+            width: 390px;
+        }
+        p{
+            color: rgba(13, 13, 13, 0.956);
+            font-size: 50px;
+        }
+        h1{
+            color: rgb(0, 0, 0);
+            /* включает анимацию название,продолжительность,повторять бескончно,плавность */
+            animation: glow 2s infinite alternate;
+            font-size: 70px;
+        }
+        a{
+             display: inline-block;
+            /* замедление перехода */
+            /* transition: all 1s; */
+            /* сдвиг Х сдвиг У размытие цвет */
+            /* box-shadow: 5px 5px 10px rgba(0,0,0,0.3); */
+        }
+
+
+
+        .airPods:hover{
+            background: linear-gradient(45deg,#4ecdc4,#ff6b6b);
+        }
+
+        /* animai title */
+        @keyframes glow{
+        from{
+        text-shadow: 0 0 5px #fff700;
+
+        }
+        to{
+           text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+
+
+        }
+
+        
+
+        }
+        .hand{
+            font-size: 80px;
+             animation: handRotate 2s infinite alternate;
+        }
+
+        @keyframes handRotate{
+            0%,100%{
+        transform: rotate(0deg);
+            }
+            50%{
+               transform: rotate(-25deg);
+            }
+        }
+
+        header{
+             background-color: rgb(249, 249, 249);
+             display: flex;
+              justify-content: space-between;
+             align-items: center;
+             padding: 15px;
+        }
+
+        ul a{
+             font-family:'Merriweather',sans-serif ;
+             font-size: 18px;
+             color:rgb(0, 0, 0) ;
+             text-decoration: none;
+             padding: 20px;
+        
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+        }
+
+        .img{
+            max-width: 500px;
+        }
+
+        footer{
+            color: black;
+        }
+
+        figcaption{
+            color: aliceblue;
+        }
+
